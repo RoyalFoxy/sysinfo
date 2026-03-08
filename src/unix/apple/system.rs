@@ -71,7 +71,7 @@ declare_signals! {
 #[doc = include_str!("../../../md_doc/supported_signals.md")]
 pub const SUPPORTED_SIGNALS: &[crate::Signal] = supported_signals();
 #[doc = include_str!("../../../md_doc/minimum_cpu_update_interval.md")]
-pub const MINIMUM_CPU_UPDATE_INTERVAL: Duration = Duration::from_millis(200);
+pub const MINIMUM_CPU_UPDATE_INTERVAL: Duration = Duration::from_millis(50);
 
 pub(crate) struct SystemInner {
     process_list: HashMap<Pid, Process>,
